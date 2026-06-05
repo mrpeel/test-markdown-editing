@@ -1,22 +1,17 @@
-In this article
-Headings
+# Headings
+
+  
 To create a heading, add one to six # symbols before your heading text. The number of # you use will determine the hierarchy level and typeface size of the heading.
 
 # A first-level heading
 
 ## A second-level heading
 
-### A third-level heading
+### ~~A third-level heading~~
 
 Screenshot of rendered GitHub Markdown showing sample h1, h2, and h3 headers, which descend in type size and visual weight to show hierarchy level.
 
-When you use two or more headings, GitHub automatically generates a table of contents that you can access by clicking the "Outline" menu icon  within the file header. Each heading title is listed in the tabl
-
----
-
-
-
-Added by GitHubfluence E2E test---Added by GitHubfluence E2E teste of contents and you can click a title to navigate to the selected section.
+When you use two or more headings, GitHub automatically generates a table of contents that you can access by clicking the "Outline" menu icon  within the file header. Each heading title is listed in the tabl---Added by GitHubfluence E2E teste of contents and you can click a title to navigate to the selected section.
 
 Screenshot of a README file with the drop-down menu for the table of contents exposed. The table of contents icon is outlined in dark orange.
 
@@ -358,9 +353,24 @@ Note
 The position of a footnote in your Markdown does not influence where the footnote will be rendered. You can write a footnote right after your reference to the footnote, and the footnote will still render at the bottom of the Markdown. Footnotes are not supported in wikis.
 
 Alerts
-Alerts, also sometimes known as callouts or admonitions, are a Markdown extension based on the blockquote syntax that you can use to emphasize critical information. On GitHub, they are displayed with distinctive colors and icons to indicate the significance of the content.
+Alerts, also sometimes known as callouts or admonitions, are a Markdown extension based on the blockquote syntax that you can use to emphasize critical information. On GitHub, t
+
+---
+
+```
+hey are displayed with distinctive colors and icons to indicate the significance of the content.
+```
 
 Use alerts only when they are crucial for user success and limit them to one or two per article to prevent overloading the reader. Additionally, you should avoid placing alerts consecutively. Alerts cannot be nested within other elements.
+
+- [ ] This
+
+
+| This thing | :angry: |     |
+| ---------- | ------- | --- |
+| That thing |         |     |
+|            |         |     |
+
 
 To add an alert, use a special blockquote line specifying the alert type, followed by the alert information in a standard blockquote. Five types of alerts are available:
 

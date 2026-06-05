@@ -10,7 +10,13 @@ To create a heading, add one to six # symbols before your heading text. The numb
 
 Screenshot of rendered GitHub Markdown showing sample h1, h2, and h3 headers, which descend in type size and visual weight to show hierarchy level.
 
-When you use two or more headings, GitHub automatically generates a table of contents that you can access by clicking the "Outline" menu icon  within the file header. Each heading title is listed in the tabl---Added by GitHubfluence E2E teste of contents and you can click a title to navigate to the selected section.
+When you use two or more headings, GitHub automatically generates a table of contents that you can access by clicking the "Outline" menu icon  within the file header. Each heading title is listed in the tabl
+
+---
+
+
+
+Added by GitHubfluence E2E test---Added by GitHubfluence E2E teste of contents and you can click a title to navigate to the selected section.
 
 Screenshot of a README file with the drop-down menu for the table of contents exposed. The table of contents icon is outlined in dark orange.
 
@@ -165,7 +171,6 @@ For example:
 
 Some body text of this section.
 
-
 Some text I want to provide a direct link to, but which doesn't have its own heading.
 
 (… more content…)
@@ -234,9 +239,7 @@ Lists
 You can make an unordered list by preceding one or more lines of text with -, \*, or +.
 
 - George Washington
-
 - John Adams
-
 - Thomas Jefferson
 Screenshot of rendered GitHub Markdown showing a bulleted list of the names of the first three American presidents.
 
@@ -284,7 +287,7 @@ Task lists
 To create a task list, preface list items with a hyphen and space followed by \[ \]. To mark a task as complete, use \[x\].
 
 - #739
-- https://github.com/octo-org/octo-repo/issues/740
+- [https://github.com/octo-org/octo-repo/issues/740](https://github.com/octo-org/octo-repo/issues/740)
 - Add delight to the experience when all tasks are complete :tada:
 Screenshot showing the rendered version of the markdown. The references to issues are rendered as issue titles.
 

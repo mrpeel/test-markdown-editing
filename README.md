@@ -3,11 +3,14 @@ Headings
 To create a heading, add one to six # symbols before your heading text. The number of # you use will determine the hierarchy level and typeface size of the heading.
 
 # A first-level heading
+
 ## A second-level heading
+
 ### A third-level heading
+
 Screenshot of rendered GitHub Markdown showing sample h1, h2, and h3 headers, which descend in type size and visual weight to show hierarchy level.
 
-When you use two or more headings, GitHub automatically generates a table of contents that you can access by clicking the "Outline" menu icon  within the file header. Each heading title is listed in the table of contents and you can click a title to navigate to the selected section.
+When you use two or more headings, GitHub automatically generates a table of contents that you can access by clicking the "Outline" menu icon  within the file header. Each heading title is listed in the tabl---Added by GitHubfluence E2E teste of contents and you can click a title to navigate to the selected section.
 
 Screenshot of a README file with the drop-down menu for the table of contents exposed. The table of contents icon is outlined in dark orange.
 
@@ -15,21 +18,21 @@ Styling text
 You can indicate emphasis with bold, italic, strikethrough, subscript, or superscript text in comment fields and .md files.
 
 Style	Syntax	Keyboard shortcut	Example	Output
-Bold	** ** or __ __	Command+B (Mac) or Ctrl+B (Windows/Linux)	**This is bold text**	This is bold text
-Italic	* * or _ _     	Command+I (Mac) or Ctrl+I (Windows/Linux)	_This text is italicized_	This text is italicized
-Strikethrough	~~ ~~ or ~ ~	None	~~This was mistaken text~~	This was mistaken text
-Bold and nested italic	** ** and _ _	None	**This text is _extremely_ important**	This text is extremely important
-All bold and italic	*** ***	None	***All this text is important***	All this text is important
-Subscript	<sub> </sub>	None	This is a <sub>subscript</sub> text	This is a subscript text
-Superscript	<sup> </sup>	None	This is a <sup>superscript</sup> text	This is a superscript text
-Underline	<ins> </ins>	None	This is an <ins>underlined</ins> text	This is an underlined text
+Bold	\*\* \*\* or \_\_ \_\_	Command+B (Mac) or Ctrl+B (Windows/Linux)	**This is bold text**	This is bold text
+Italic	\* \* or \_ \_     	Command+I (Mac) or Ctrl+I (Windows/Linux)	*This text is italicized*	This text is italicized
+Strikethrough	\~\~ \~\~ or \~ \~	None	~~This was mistaken text~~	This was mistaken text
+Bold and nested italic	\*\* \*\* and \_ \_	None	**This text is *extremely* important**	This text is extremely important
+All bold and italic	\*\*\* \*\*\*	None	***All this text is important***	All this text is important
+Subscript		None	This is a subscript text	This is a subscript text
+Superscript		None	This is a superscript text	This is a superscript text
+Underline		None	This is an underlined text	This is an underlined text
 Quoting text
-You can quote text with a >.
+You can quote text with a &gt;.
 
 Text that is not a quote
 
 > Text that is a quote
-Quoted text is indented with a vertical line on the left and displayed using gray type.
+> Quoted text is indented with a vertical line on the left and displayed using gray type.
 
 Screenshot of rendered GitHub Markdown showing the difference between normal and quoted text.
 
@@ -46,11 +49,13 @@ Screenshot of rendered GitHub Markdown showing that characters surrounded by bac
 To format code or text into its own distinct block, use triple backticks.
 
 Some basic Git commands are:
+
 ```
 git status
 git add
 git commit
 ```
+
 Screenshot of rendered GitHub Markdown showing a simple code block without syntax highlighting.
 
 For more information, see Creating and highlighting code blocks.
@@ -74,7 +79,7 @@ Note
 A supported color model cannot have any leading or trailing spaces within the backticks.
 The visualization of the color is only supported in issues, pull requests, and discussions.
 Links
-You can create an inline link by wrapping link text in brackets [ ], and then wrapping the URL in parentheses ( ). You can also use the keyboard shortcut Command+K to create a link. When you have text selected, you can paste a URL from your clipboard to automatically create a link from the selection.
+You can create an inline link by wrapping link text in brackets \[ \], and then wrapping the URL in parentheses ( ). You can also use the keyboard shortcut Command+K to create a link. When you have text selected, you can paste a URL from your clipboard to automatically create a link from the selection.
 
 You can also create a Markdown hyperlink by highlighting the text and using the keyboard shortcut Command+V. If you'd like to replace the text with the link, use the keyboard shortcut Command+Shift+V.
 
@@ -96,7 +101,7 @@ If you need to determine the anchor for a heading in a file you are editing, you
 Letters are converted to lower-case.
 Spaces are replaced by hyphens (-). Any other whitespace or punctuation characters are removed.
 Leading and trailing whitespace are removed.
-Markup formatting is removed, leaving only the contents (for example, _italics_ becomes italics).
+Markup formatting is removed, leaving only the contents (for example, *italics* becomes italics).
 If the automatically generated anchor for a heading is identical to an earlier anchor in the same document, a unique identifier is generated by appending a hyphen and an auto-incrementing integer.
 For more detailed information on the requirements of URI fragments, see RFC 3986: Uniform Resource Identifier (URI): Generic Syntax, Section 3.5.
 
@@ -106,7 +111,8 @@ The code block below demonstrates the basic rules used to generate anchors from 
 
 ## Sample Section
 
-## This'll be a _Helpful_ Section About the Greek Letter Θ!
+## This'll be a *Helpful* Section About the Greek Letter Θ!
+
 A heading containing characters not allowed in fragments, UTF-8 characters, two consecutive spaces between the first and second words, and formatting.
 
 ## This heading is not unique in the file
@@ -145,7 +151,7 @@ guidelines for this project](docs/CONTRIBUTING.md)
 Relative links are easier for users who clone your repository. Absolute links may not work in clones of your repository - we recommend using relative links to refer to other files within your repository.
 
 Custom anchors
-You can use standard HTML anchor tags (<a name="unique-anchor-name"></a>) to create navigation anchor points for any location in the document. To avoid ambiguous references, use a unique naming scheme for anchor tags, such as adding a prefix to the name attribute value.
+You can use standard HTML anchor tags () to create navigation anchor points for any location in the document. To avoid ambiguous references, use a unique naming scheme for anchor tags, such as adding a prefix to the name attribute value.
 
 Note
 
@@ -159,7 +165,7 @@ For example:
 
 Some body text of this section.
 
-<a name="my-custom-anchor-point"></a>
+
 Some text I want to provide a direct link to, but which doesn't have its own heading.
 
 (… more content…)
@@ -182,11 +188,12 @@ This example
 Will span two lines
 Include a backslash at the end of the first line.
 
-This example\
+This example  
 Will span two lines
 Include an HTML single line break tag at the end of the first line.
 
-This example<br/>
+This example  
+
 Will span two lines
 If you leave a blank line between two lines, both .md files and Markdown in issues, pull requests, and discussions will render the two lines separated by the blank line:
 
@@ -194,9 +201,9 @@ This example
 
 Will have a blank line separating both lines
 Images
-You can display an image by adding ! and wrapping the alt text in [ ]. Alt text is a short text equivalent of the information in the image. Then, wrap the link for the image in parentheses ().
+You can display an image by adding ! and wrapping the alt text in \[ \]. Alt text is a short text equivalent of the information in the image. Then, wrap the link for the image in parentheses ().
 
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://myoctocat.com/assets/images/base-octocat.svg)
+Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.
 
 Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.
 
@@ -221,14 +228,16 @@ The last two relative links in the table above will work for images in a private
 For more information, see Relative Links.
 
 The Picture element
-The <picture> HTML element is supported.
+The  HTML element is supported.
 
 Lists
-You can make an unordered list by preceding one or more lines of text with -, *, or +.
+You can make an unordered list by preceding one or more lines of text with -, \*, or +.
 
 - George Washington
-* John Adams
-+ Thomas Jefferson
+
+- John Adams
+
+- Thomas Jefferson
 Screenshot of rendered GitHub Markdown showing a bulleted list of the names of the first three American presidents.
 
 To order your list, precede each line with a number.
@@ -241,12 +250,12 @@ Screenshot of rendered GitHub Markdown showing a numbered list of the names of t
 Nested Lists
 You can create a nested list by indenting one or more list items below another item.
 
-To create a nested list using the web editor on GitHub or a text editor that uses a monospaced font, like Visual Studio Code, you can align your list visually. Type space characters in front of your nested list item until the list marker character (- or *) lies directly below the first character of the text in the item above it.
+To create a nested list using the web editor on GitHub or a text editor that uses a monospaced font, like Visual Studio Code, you can align your list visually. Type space characters in front of your nested list item until the list marker character (- or \*) lies directly below the first character of the text in the item above it.
 
 1. First list item
-   - First nested list item
-     - Second nested list item
-Note
+  - First nested list item
+    - Second nested list item
+    Note
 
 In the web-based editor, you can indent or dedent one or more lines of text by first highlighting the desired lines and then using Tab or Shift+Tab respectively.
 
@@ -259,29 +268,29 @@ To create a nested list in the comment editor on GitHub, which doesn't use a mon
 In this example, you could add a nested list item under the list item 100. First list item by indenting the nested list item a minimum of five spaces, since there are five characters (100. ) before First list item.
 
 100. First list item
-     - First nested list item
-Screenshot of rendered GitHub Markdown showing a numbered item prefaced by the number 100 followed by a bulleted item nested one level.
+  - First nested list item
+  Screenshot of rendered GitHub Markdown showing a numbered item prefaced by the number 100 followed by a bulleted item nested one level.
 
 You can create multiple levels of nested lists using the same method. For example, because the first nested list item has seven characters (␣␣␣␣␣-␣) before the nested list content First nested list item, you would need to indent the second nested list item by at least two more characters (nine spaces minimum).
 
 100. First list item
-     - First nested list item
-       - Second nested list item
-Screenshot of rendered GitHub Markdown showing a numbered item prefaced by the number 100 followed by bullets at two different levels of nesting.
+  - First nested list item
+    - Second nested list item
+    Screenshot of rendered GitHub Markdown showing a numbered item prefaced by the number 100 followed by bullets at two different levels of nesting.
 
 For more examples, see the GitHub Flavored Markdown Spec.
 
 Task lists
-To create a task list, preface list items with a hyphen and space followed by [ ]. To mark a task as complete, use [x].
+To create a task list, preface list items with a hyphen and space followed by \[ \]. To mark a task as complete, use \[x\].
 
-- [x] #739
-- [ ] https://github.com/octo-org/octo-repo/issues/740
-- [ ] Add delight to the experience when all tasks are complete :tada:
+- #739
+- https://github.com/octo-org/octo-repo/issues/740
+- Add delight to the experience when all tasks are complete :tada:
 Screenshot showing the rendered version of the markdown. The references to issues are rendered as issue titles.
 
-If a task list item description begins with a parenthesis, you'll need to escape it with \:
+If a task list item description begins with a parenthesis, you'll need to escape it with :
 
-- [ ] \(Optional) Open a followup issue
+- \\(Optional) Open a followup issue
 
 For more information, see About tasklists.
 
@@ -330,12 +339,12 @@ You can create a new paragraph by leaving a blank line between lines of text.
 Footnotes
 You can add footnotes to your content by using this bracket syntax:
 
-Here is a simple footnote[^1].
+Here is a simple footnote\[^1\].
 
-A footnote can also have multiple lines[^2].
+A footnote can also have multiple lines\[^2\].
 
-[^1]: My reference.
-[^2]: To add line breaks within a footnote, add 2 spaces to the end of a line.  
+\[^1\]: My reference.
+\[^2\]: To add line breaks within a footnote, add 2 spaces to the end of a line.  
 This is a second line.
 The footnote will render like this:
 
@@ -352,30 +361,31 @@ Use alerts only when they are crucial for user success and limit them to one or 
 
 To add an alert, use a special blockquote line specifying the alert type, followed by the alert information in a standard blockquote. Five types of alerts are available:
 
-> [!NOTE]
+> \[!NOTE\]
 > Useful information that users should know, even when skimming content.
 
-> [!TIP]
+> \[!TIP\]
 > Helpful advice for doing things better or more easily.
 
-> [!IMPORTANT]
+> \[!IMPORTANT\]
 > Key information users need to know to achieve their goal.
 
-> [!WARNING]
+> \[!WARNING\]
 > Urgent info that needs immediate user attention to avoid problems.
 
-> [!CAUTION]
+> \[!CAUTION\]
 > Advises about risks or negative outcomes of certain actions.
-Here are the rendered alerts:
+> Here are the rendered alerts:
 
 Screenshot of rendered Markdown alerts showing how Note, Tip, Important, Warning, and Caution render with different colored text and icons.
 
 Hiding content with comments
 You can tell GitHub to hide content from the rendered Markdown by placing the content in an HTML comment.
 
-<!-- This content will not appear in the rendered Markdown -->
+
+
 Ignoring Markdown formatting
-You can tell GitHub to ignore (or escape) Markdown formatting by using \ before the Markdown character.
+You can tell GitHub to ignore (or escape) Markdown formatting by using \\ before the Markdown character.
 
 Let's rename \*our-new-project\* to \*our-old-project\*.
 
